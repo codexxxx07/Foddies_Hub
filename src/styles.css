@@ -1,0 +1,93 @@
+:root {
+  --primary: #ea580c;
+  --primary-dark: #c2410c;
+  --transition-speed: 0.8s;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.dark {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+.dark body {
+  background-color: #0f172a;
+}
+.dark nav {
+  background-color: rgba(15, 23, 42, 0.8);
+  border-color: rgba(30, 41, 59, 0.5);
+}
+.dark nav h1, .dark nav a:not(.bg-slate-900) {
+  color: #f1f5f9;
+}
+.dark header .bg-gradient-to-b {
+  from: rgba(30, 41, 59, 0.5);
+  via: #0f172a;
+  to: #0f172a;
+}
+.dark header h1, .dark header p {
+  color: #f1f5f9;
+}
+.dark main h3, .dark main h4, .dark main p:not(.text-orange-600) {
+  color: #f1f5f9;
+}
+.dark main .bg-white {
+  background-color: #1e293b;
+  border-color: #334155;
+}
+.dark main .text-slate-600, .dark main .text-slate-500 {
+  color: #94a3b8;
+}
+.dark footer {
+  background-color: #020617;
+}
+
+::selection {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 3px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/*# sourceMappingURL=styles.css.map */

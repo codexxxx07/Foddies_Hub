@@ -1,0 +1,101 @@
+// Global Custom Styles
+:root {
+  --primary: #ea580c;
+  --primary-dark: #c2410c;
+  --transition-speed: 0.8s;
+}
+
+// Scroll Reveal Implementation
+.reveal-on-scroll.revealed {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+// Custom Blob Animation for Hero Section
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+// Dark Mode Overrides
+.dark {
+  background-color: #0f172a; // slate-900
+  color: #f1f5f9; // slate-100
+
+  body {
+    background-color: #0f172a;
+  }
+
+  nav {
+    background-color: rgba(15, 23, 42, 0.8);
+    border-color: rgba(30, 41, 59, 0.5);
+    
+    h1, a:not(.bg-slate-900) {
+      color: #f1f5f9;
+    }
+  }
+
+  header {
+    .bg-gradient-to-b {
+      from: rgba(30, 41, 59, 0.5);
+      via: #0f172a;
+      to: #0f172a;
+    }
+    h1, p {
+      color: #f1f5f9;
+    }
+  }
+
+  main {
+    h3, h4, p:not(.text-orange-600) {
+      color: #f1f5f9;
+    }
+    .bg-white {
+      background-color: #1e293b; // slate-800
+      border-color: #334155; // slate-700
+    }
+    .text-slate-600, .text-slate-500 {
+      color: #94a3b8; // slate-400
+    }
+  }
+
+  footer {
+    background-color: #020617;
+  }
+}
+
+// Smooth Selection
+::selection {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+// Better Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 3px solid #f8fafc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
