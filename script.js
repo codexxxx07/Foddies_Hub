@@ -75,13 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Load saved theme
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    htmlElement.classList.add("dark");
-    updateThemeIcon(true);
-  }
-  
   // Initial state for color button
   updateColorButtonState();
 
